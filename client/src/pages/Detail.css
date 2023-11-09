@@ -1,0 +1,33 @@
+/* Detail.css */
+.detail-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.detail-image {
+  width: 100%;
+  height: auto;
+}
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+  .detail-container {
+    flex-direction: row;
+  }
+
+  .detail-image {
+    width: 50%;
+  }
+}

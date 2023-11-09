@@ -17,7 +17,7 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Small T-Shirt',
+      name: 'Solo Swoosh (S)',
       category: categories[0]._id,
       description:
         'Premium Essentials T-Shirt has a loose fit for a carefree, comfortable look. Its heavyweight organic cotton fabric feels thick and soft. This product is made from at least 75% organic cotton fibres.',
@@ -26,7 +26,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Large T-Shirt',
+      name: 'Rise 365 (L)',
       category: categories[0]._id,
       description:
          'This super-soft tee features longer sleeves and dropped shoulders. Combined with a minimal Jumpman woven chest patch, you are lookin n-i-c-e.',
@@ -35,7 +35,7 @@ db.once('open', async () => {
       quantity: 50
     },
     {
-      name: 'Extra Large T-Shirt',
+      name: 'Flight Essentials (XL)',
       description:
          'The sweat-wicking Ready Top keeps you fresh for all your fitness activities. Its cut with a relaxed fit with quick-drying, breathable fabric to help you stay cool when your workout heats up. Plus, it has angled sleeves for better movement, whether you are lifting at the gym or stretching outside.',
       image: 'extralargeshirt.jpg',
@@ -44,7 +44,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Small Pants',
+      name: 'Club Fleece (S)',
       category: categories[1]._id,
       description:
         'Ready for cooler weather, the Nike Sportswear Tech Fleece Joggers feature an updated fit perfect for everyday wear. Roomy through the thigh, this tapered design narrows at the knee to give you a comfortable feel without losing the clean, tailored look you love. Tall ribbed cuffs complete the jogger look while a zipped pocket on the right leg provides secure small-item storage and elevates the look.',
@@ -53,7 +53,7 @@ db.once('open', async () => {
       quantity: 50
     },
     {
-      name: 'Large Pants',
+      name: 'Tech Fleece (L)',
       category: categories[1]._id,
       description:
         'A wardrobe staple, the Nike Sportswear Club Fleece Joggers combine a classic look with the soft comfort of fleece for an elevated, everyday look that you can wear every day.',
@@ -62,7 +62,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Extra Large Pants',
+      name: 'Air Max (XL)',
       category: categories[1]._id,
       description:
         'When your daily outings call for preparation, these well-equipped Nike Club cargo trousers give you more pockets to securely stow the extras. We made these from a soft-yet-durable cotton Ripstop fabric in a roomy fit for casual, care-free comfort.',
