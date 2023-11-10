@@ -112,4 +112,6 @@ Following were the documents utilized to help write code:
 
 ## <a name="link"></a>Deployed Application 🚀
 
+![image](https://github.com/SanjeethTharmarajah/ekin/assets/130941252/26758d9d-9075-4b34-bc2c-d116d0d14cb0)
+
 [Add Deployed Link Here!]()
