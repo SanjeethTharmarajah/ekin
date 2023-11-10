@@ -121,4 +121,4 @@ Following were the documents utilized to help write code:
 ![image](https://github.com/SanjeethTharmarajah/ekin/assets/130941252/521607f0-eae8-45c0-92e2-bdf341e30d94)
 
 
-[Deployed Link Here!](https://ekin555-79280edfc4bf.herokuapp.com/)
+[Deployed Link Here!](https://ekin555-f6889f1fc8cf.herokuapp.com/)
