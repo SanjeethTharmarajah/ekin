@@ -1,0 +1,41 @@
+/* Updated Styles for the Nav component */
+.nav-header {
+  background-color: var(--primary);
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.nav-title {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+  font-size: larger;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: white;
+}
