@@ -19,21 +19,21 @@ The E-Commerce Apparel Store is a full-stack MERN (MongoDB, Express, React, Node
 
 ## <a name="features"></a>Key Features 🔑
 
-**User Registration:** Users can create an account by providing their details like name, email, and password.
-**User Login:** Registered users can log in using their credentials.
-**Product Listings:** Display a list of products with details such as images, descriptions, prices, and availability.
-**Add to Cart:** Users can add products to their shopping cart.
-**Update Cart:** Users can modify the quantity or remove items from the cart.
-**View Cart:** Users can view the contents of their cart.
-**Shipping Information:** Users provide shipping details, such as address and payment information.
-**Order Summary:** Users can review their order before confirming.
-**Order Confirmation:** After payment, users receive an order confirmation with a unique order ID.
-**View Orders:** Users can access a history of their past orders, including order details and status.
-**Reorder:** Users can reorder items from their order history.
-**Product Pages:** Each product has a dedicated page with detailed information and images.
-**Payment Processing:** Integration with payment gateways to facilitate secure and convenient online payments.
-**Responsive Design:** Ensuring the website is usable on various devices, including desktops, tablets, and mobile phones.
-**Performance Optimization:** Fast loading times and efficient use of server resources.
+- **User Registration:** Users can create an account by providing their details like name, email, and password.
+- **User Login:** Registered users can log in using their credentials.
+- **Product Listings:** Display a list of products with details such as images, descriptions, prices, and availability.
+- **Add to Cart:** Users can add products to their shopping cart.
+- **Update Cart:** Users can modify the quantity or remove items from the cart.
+- **View Cart:** Users can view the contents of their cart.
+- **Shipping Information:** Users provide shipping details, such as address and payment information.
+- **Order Summary:** Users can review their order before confirming.
+- **Order Confirmation:** After payment, users receive an order confirmation with a unique order ID.
+- **View Orders:** Users can access a history of their past orders, including order details and status.
+- **Reorder:** Users can reorder items from their order history.
+- **Product Pages:** Each product has a dedicated page with detailed information and images.
+- **Payment Processing:** Integration with payment gateways to facilitate secure and convenient online payments.
+- **Responsive Design:** Ensuring the website is usable on various devices, including desktops, tablets, and mobile phones.
+- **Performance Optimization:** Fast loading times and efficient use of server resources.
 
 ## <a name="installation"></a>Installation 🛠️
 
