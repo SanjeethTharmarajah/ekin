@@ -6,8 +6,12 @@ import Cart from '../components/Cart';
 const Home = () => {
   return (
     <div className="container">
-      <CategoryMenu />
-      <ProductList />
+      <div >
+        <CategoryMenu />
+      </div>
+      <div className="right-content">
+        <ProductList />
+      </div>
       <Cart />
     </div>
   );

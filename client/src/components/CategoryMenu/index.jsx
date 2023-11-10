@@ -47,8 +47,8 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      <h6>Choose a Category:</h6>
+    <div className='left-menu'>
+      <h6><strong>Choose a Category:</strong></h6>
       <button onClick={() => {
         handleClick2();
       }}>

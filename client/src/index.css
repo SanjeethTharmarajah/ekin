@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --primary: #232F3E;
   --secondary: #000000;
@@ -9,18 +10,17 @@
   --spacing-two: calc(1rem);
 }
 
+/* Reset and base styles */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Typography */
 body {
   min-height: 100%;
   background-color: #fafef2;
-}
-
-body {
-  margin: 0;
-  padding: 0;
   font-family: "Century Gothic", "Gothic A1", sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -28,6 +28,7 @@ body {
   color: var(--light);
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -43,22 +44,18 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
-  color: var(--secondary);
 }
 
 h2 {
   font-size: 2rem;
-  color: var(--secondary);
 }
 
 h3 {
   font-size: 1.75rem;
-  color: var(--secondary);
 }
 
 h4 {
   font-size: 1.5rem;
-  color: var(--secondary);
 }
 
 h5 {
@@ -68,9 +65,9 @@ h5 {
 
 h6 {
   font-size: 1rem;
-  color: var(--secondary);
 }
 
+/* Lists and paragraphs */
 ul {
   list-style: none;
 }
@@ -81,6 +78,7 @@ p {
   color: var(--secondary);
 }
 
+/* Links */
 a {
   color: var(--secondary);
   text-decoration: none;
@@ -89,15 +87,17 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: var(--light);
+  color: #107896;
 }
 
+/* Header */
 header {
   background: url(header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
   color: var(--secondary);
+  width: 100%;
 }
 
 header a {
@@ -108,7 +108,7 @@ header a:hover {
   color: var(--light);
 }
 
-
+/* Buttons */
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -117,12 +117,12 @@ button {
   outline: none;
   cursor: pointer;
   margin: 5px;
-  background-color: rgba(0, 0, 0, 5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: var(--light);
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
   background-color: white;
   color: black;
 }
@@ -139,20 +139,20 @@ button:hover {
   color: black;
   border-radius: 0px;
   text-transform: uppercase;
-
 }
 
 .button2:hover {
-  opacity: .8;
+  opacity: 0.8;
   color: white;
   background-color: black;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
+/* Images and icons */
 img {
   max-width: 100%;
   border-radius: 5px;
@@ -163,8 +163,9 @@ span[role="img"] {
   cursor: default;
 }
 
+/* Forms and input elements */
 form {
-  width: 40%;
+  width: 100%;
 }
 
 input {
@@ -178,16 +179,35 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
+/* Containers and layout */
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
+  display: flex;
+  align-items: flex-start;
 }
 
+.centered-content {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 100px;
+  margin-right: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Flexbox */
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -241,30 +261,225 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
+/* Cards */
 .card {
   width: 28%;
   text-align: center;
   margin: 25px;
   padding: 25px;
-  /* background-color: #F5F5DC; */
   color: black;
   border-radius: 5px;
 }
 
 .card p {
-  color: var(--secondary);
+  color: black;
 }
 
 .card p:hover {
-  color: rgb(248, 217, 15);
+  color: #107896;
 }
 
+/* Error text */
 .error-text {
   color: var(--error);
 }
 
+/* CSS for Home component layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-menu {
+  position: fixed;
+  flex: 0 0 15%;
+  padding: 3%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-menu>* {
+  width: 100%;
+}
+
+.right-content {
+  flex: 0 0 90%;
+  padding: 16px;
+}
+
+/* Container for the order history page */
+.order-history-container {
+  padding: 20px;
+}
+
+/* Back link style */
+.back-link {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.back-link:hover {
+  color: #107896;
+
+}
+
+/* Order history title style */
+.order-history-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Individual order history entry style */
+.order-history-entry {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+/* Order date style */
+.order-date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Product list style */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual product card style */
+.product-card {
+  flex: 0 0 20%;
+  padding: 10px;
+}
+
+/* Product link style */
+.product-link {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Product image style */
+.product-link img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Product name style */
+.product-name {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Product price style */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .card {
+    margin-left: 10%;
+    width: 30%;
+  }
+
+  .left-menu {
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card {
+    margin-left: 25%;
     width: 100%;
+  }
+
+  .left-menu {
+    width: 20%;
+    padding: 0;
+  }
+
+  .centered-content {
+    height: auto;
+    margin-top: 20px;
+    margin-right: 0;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .centered-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .order-history-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  /* Product card style for smaller screens */
+  .product-card {
+    flex: 0 0 calc(50% - 10px);
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 425px;
+  }
+
+  .card {
+    margin-left: 100px;
+    width: 100%;
+  }
+
+  .left-menu {
+    width: 20%;
+    font-size: 0.2rem;
+    padding: 0;
+  }
+
+  .centered-content {
+    margin-top: 10px;
+    margin-right: 0;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .centered-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .order-history-entry {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .product-card {
+    flex: 0 0 100%;
+  }
+
+  .order-history-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .product-name {
+    font-size: 14px;
   }
 }
