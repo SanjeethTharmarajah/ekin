@@ -34,8 +34,10 @@ const Cart = () => {
   useEffect(() => {
     if (data) {
       stripePromise.then((res) => {
+        console.log(res)
         res.redirectToCheckout({ sessionId: data.checkout.session });
-      });
+      })
+      .catch ((err)=>{console.log(err)});
     }
   }, [data]);
 
@@ -59,6 +61,7 @@ const Cart = () => {
         productIds.push(item._id);
       }
     });
+    console.log(productIds);
     getCheckout({
       variables: { products: productIds }
     });
@@ -85,11 +88,11 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
             {
               Auth.loggedIn() ?
-                <button className="button2" onClick={submitCheckout}>
-                  Checkout
-                </button>
-                :
-                <span>(log in to check out)</span>
+              <button className="button2" onClick={submitCheckout}>
+                Checkout
+              </button>
+              :
+              <span>(log in to check out)</span>
             }
           </div>
         </div>
