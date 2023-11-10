@@ -55,11 +55,11 @@ npm run start:dev
 
 ## <a name="usage"></a>Usage 📘
 
-**Access the Application:** Open your web browser and visit http://localhost:3000.
-**Browse the Catalog:** Explore the extensive product catalog, view product details, and select items for your cart.
-**Shopping Cart:** Add or remove products from your cart. The cart is dynamically updated with item quantities and prices.
-**Secure Checkout:** Proceed to the checkout process, securely processing your payment via the Stripe integration.
-**User Accounts:** Register and log in to keep track of your order history.
+- **Access the Application:** Open your web browser and visit http://localhost:3000.
+- **Browse the Catalog:** Explore the extensive product catalog, view product details, and select items for your cart.
+- **Shopping Cart:** Add or remove products from your cart. The cart is dynamically updated with item quantities and prices.
+- **Secure Checkout:** Proceed to the checkout process, securely processing your payment via the Stripe integration.
+- **User Accounts:** Register and log in to keep track of your order history.
 
 ### Following are screenshots of the application pages. 🎥
 
@@ -74,11 +74,11 @@ Contributions to this application project are welcome. If you encounter issues, 
 
 To contribute to this project, follow these steps:
 
-**Fork the Repository:** Click the "Fork" button in the top right corner of the repository page.
-**Create a New Branch:** Create a new branch for your feature or bug fix.
-**Make Changes:** Implement your changes and commit them.
-**Push to Your Fork:** Push your changes to your forked repository on GitHub.
-**Submit a Pull Request:** Create a pull request from your fork to the original repository.
+- **Fork the Repository:** Click the "Fork" button in the top right corner of the repository page.
+- **Create a New Branch:** Create a new branch for your feature or bug fix.
+- **Make Changes:** Implement your changes and commit them.
+- **Push to Your Fork:** Push your changes to your forked repository on GitHub.
+- **Submit a Pull Request:** Create a pull request from your fork to the original repository.
 
 ## <a name="tests"></a>Tests 🧪
 
@@ -112,4 +112,4 @@ Following were the documents utilized to help write code:
 
 ## <a name="link"></a>Deployed Application 🚀
 
-[]()
+[Add Deployed Link Here!]()
