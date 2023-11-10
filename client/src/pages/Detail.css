@@ -1,12 +1,15 @@
 /* Detail.css */
 .detail-container {
+  font-family: "Century Gothic", "Gothic A1", sans-serif;
   display: flex;
   gap: 20px;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 .detail-image {
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 
@@ -14,19 +17,20 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+
 }
 
 .button-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 950px) {
   .detail-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .detail-image {
-    width: 50%;
+    width: 100%;
   }
 }

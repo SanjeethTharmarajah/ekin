@@ -85,11 +85,11 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
             {
               Auth.loggedIn() ?
-              <button className="button2" onClick={submitCheckout}>
-                Checkout
-              </button>
-              :
-              <span>(log in to check out)</span>
+                <button className="button2" onClick={submitCheckout}>
+                  Checkout
+                </button>
+                :
+                <span>(log in to check out)</span>
             }
           </div>
         </div>

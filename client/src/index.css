@@ -15,12 +15,13 @@
 
 body {
   min-height: 100%;
+  background-color: #fafef2;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: "Century Gothic", "Gothic A1", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -33,47 +34,51 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Century Gothic", "Gothic A1", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
 h1 {
   font-size: 2.25rem;
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
 h2 {
   font-size: 2rem;
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
 h3 {
   font-size: 1.75rem;
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
 h4 {
   font-size: 1.5rem;
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
 h5 {
   font-size: 1.25rem;
-  color:var(--light);
+  color: var(--light);
 }
 
 h6 {
   font-size: 1rem;
-  color:var(--secondary);
+  color: var(--secondary);
+}
+
+ul {
+  list-style: none;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-top: 0;
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
 a {
@@ -83,23 +88,26 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--light);
 }
 
 header {
   background: url(header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height:300px;
-  color:var(--secondary);
+  height: 300px;
+  color: var(--secondary);
 }
 
 header a {
-  color:var(--secondary);
+  color: var(--secondary);
 }
+
 header a:hover {
-  color:var(--light);
+  color: var(--light);
 }
+
 
 button {
   font-size: 1rem;
@@ -109,32 +117,35 @@ button {
   outline: none;
   cursor: pointer;
   margin: 5px;
-  background-color: var(--secondary);
+  background-color: rgba(0, 0, 0, 5);
   color: var(--light);
-  -webkit-box-shadow: 3px 5px 15px 3px rgba(0,0,0,0.67); 
-  box-shadow: 3px 5px 15px 3px rgba(0,0,0,0.67);
 }
 
 button:hover {
   opacity: .8;
+  background-color: white;
+  color: black;
 }
 
 .button2 {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border: none;
+  border: 1px solid black;
   outline: none;
   cursor: pointer;
   margin: 5px;
-  background-color: #066e43;
-  color: var(--light);
-  -webkit-box-shadow: 3px 5px 15px 3px rgba(0,0,0,0.67); 
-  box-shadow: 3px 5px 15px 3px rgba(0,0,0,0.67);
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  text-transform: uppercase;
+
 }
 
 .button2:hover {
   opacity: .8;
+  color: white;
+  background-color: black;
 }
 
 button[disabled] {
@@ -144,6 +155,8 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  border-radius: 5px;
+  align-self: center;
 }
 
 span[role="img"] {
@@ -169,11 +182,10 @@ input:focus {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding:50px;
+  padding: 50px;
 }
 
 .flex-row {
@@ -230,21 +242,21 @@ input:focus {
 }
 
 .card {
-  width: 25%;
+  width: 28%;
   text-align: center;
-  border-radius:5px;
-  margin:25px;
-  padding:25px;
-  background-color:rgba(0,0,0,1);
-  color:var(--light);
+  margin: 25px;
+  padding: 25px;
+  /* background-color: #F5F5DC; */
+  color: black;
   border-radius: 5px;
 }
 
 .card p {
-    color:var(--light);
+  color: var(--light);
 }
+
 .card p:hover {
-  color:#066e43;
+  color: rgb(248, 217, 15);
 }
 
 .error-text {
