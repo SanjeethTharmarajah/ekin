@@ -299,6 +299,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left:-55px;
 }
 
 .left-menu>* {
