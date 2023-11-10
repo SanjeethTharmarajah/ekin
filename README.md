@@ -47,10 +47,16 @@ To install the EKIN MERN App, follow these steps:
 npm install
 ```
 
-4. Start the application using the following command:
+4. Seed the application using the following command:
 
 ```
-npm run start:dev
+npm run seed
+```
+
+5. Start the application using the following command:
+
+```
+npm run start
 ```
 
 ## <a name="usage"></a>Usage 📘
